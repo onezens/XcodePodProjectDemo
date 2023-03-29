@@ -1,0 +1,38 @@
+PODS:
+  - PXXFoundation (0.1.0):
+    - SDWebImage
+  - PXXOCLib (0.1.0):
+    - PXXSwiftLib
+  - PXXSwiftLib (0.1.0):
+    - PXXFoundation
+  - SDWebImage (5.15.5):
+    - SDWebImage/Core (= 5.15.5)
+  - SDWebImage/Core (5.15.5)
+
+DEPENDENCIES:
+  - PXXFoundation (from `PXXFoundation`)
+  - PXXOCLib (from `PXXOCLib`)
+  - PXXSwiftLib (from `PXXSwiftLib`)
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  PXXFoundation:
+    :path: PXXFoundation
+  PXXOCLib:
+    :path: PXXOCLib
+  PXXSwiftLib:
+    :path: PXXSwiftLib
+
+SPEC CHECKSUMS:
+  PXXFoundation: e407e459b5433320489900959c838d5fd62d8648
+  PXXOCLib: 53dee00d1a437c66d83283f1cc08cdbece8d510c
+  PXXSwiftLib: ac4c8fd358b2ae2455a85e6510ee13684f3603bc
+  SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
+
+PODFILE CHECKSUM: 8dc874da9396750aa1a78c27172f310a9bdd3737
+
+COCOAPODS: 1.10.2
