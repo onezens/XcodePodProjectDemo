@@ -7,7 +7,7 @@
 
 #import "PXXFoundation.h"
 //#import <Alamofire/Alamofire-Swift.h>
-//#import <Alamofire/Alamofire-umbrella.h>
+@import Alamofire;
 
 @implementation PXXFoundation
 
@@ -15,6 +15,5 @@
 {
     return [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
 }
-
 
 @end

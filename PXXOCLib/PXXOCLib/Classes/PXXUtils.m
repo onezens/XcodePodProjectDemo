@@ -7,8 +7,8 @@
 
 
 #import "PXXUtils.h"
-#import <PXXSwiftLib/PXXSwiftLib-Swift.h>
-//@import PXXSwiftLib;
+//#import <PXXSwiftLib/PXXSwiftLib-Swift.h>
+@import PXXSwiftLib;
 
 @implementation PXXUtils
 
