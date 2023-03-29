@@ -1,3 +1,8 @@
+PATH
+  remote: cocoapods-pxplugin
+  specs:
+    cocoapods-pxplugin (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -91,6 +96,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods (~> 1.10.2)!
+  cocoapods-pxplugin!
 
 BUNDLED WITH
    1.17.3
