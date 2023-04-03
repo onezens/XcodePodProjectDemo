@@ -28,6 +28,7 @@ module Pod
 
       def initialize(argv)
         @name = argv.shift_argument
+        UI.puts "initialize argv: #{argv} #{@name}"
         super
       end
 

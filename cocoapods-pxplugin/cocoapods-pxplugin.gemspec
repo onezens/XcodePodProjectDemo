@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cocoapods-pxplugin/gem_version.rb'
-
+require_relative 'lib/cocoapods-pxplugin.rb'
 Gem::Specification.new do |spec|
   spec.name          = 'cocoapods-pxplugin'
   spec.version       = CocoapodsPxplugin::VERSION
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
+  puts "--> files: #{spec.files}"
 end

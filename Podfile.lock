@@ -16,12 +16,11 @@ PODS:
   - SDWebImage/Core (5.15.5)
 
 DEPENDENCIES:
-  - Alamofire
   - glog
   - PXXFoundation (from `PXXFoundation`)
   - PXXOCLib (from `PXXOCLib`)
   - PXXSwiftLib (from `PXXSwiftLib`)
-  - React-logger (from `logger`)
+  - React-logger (from `React-logger`)
   - SDWebImage
 
 SPEC REPOS:
@@ -38,7 +37,7 @@ EXTERNAL SOURCES:
   PXXSwiftLib:
     :path: PXXSwiftLib
   React-logger:
-    :path: logger
+    :path: React-logger
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
@@ -49,6 +48,6 @@ SPEC CHECKSUMS:
   React-logger: ff8141263ba489edf64075fe68703349dfbc8601
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
 
-PODFILE CHECKSUM: fcfdf46d6707e25fb19cabaafecd17320507f978
+PODFILE CHECKSUM: d713f101a3092860ebb04d9408a61debd96ce434
 
 COCOAPODS: 1.10.2
