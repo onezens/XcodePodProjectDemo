@@ -1,6 +1,6 @@
-source 'https://cdn.cocoapods.org/'
+source 'git@github.com:onezens/PodSpec.git'
 platform :ios, '10.0'
-
+#use_modular_headers!
 install! 'cocoapods',
         :generate_multiple_pod_projects => true, # 加快项目索引速度
         :incremental_installation => true,
@@ -11,14 +11,19 @@ def enable_modular_headers
   pod 'PXXOCLib', :path=>'PXXOCLib', :modular_headers => true
   pod 'PXXSwiftLib', :path=>'PXXSwiftLib', :modular_headers => true
   pod 'PXXFoundation', :path=>'PXXFoundation', :modular_headers => true
+  pod 'PXXOCSwiftLib', :path=>'PXXOCSwiftLib', :modular_headers => true
 end
 
 target 'XcodePodProjectDemo_Example' do
-  use_frameworks!
+  use_frameworks! :linkage => :static # 在壳工程里面，使用swift可以避免使用静态库后，找不到swift库的问题
+#  use_frameworks!
   enable_modular_headers
   pod 'SDWebImage'
   pod 'glog'
   pod 'React-logger', :path=>'React-logger'
+  pod 'Address-Autofill-iOS'
+  pod 'UnityFramework', '0.0.10'
+
  
   target 'XcodePodProjectDemo_Tests' do
     inherit! :search_paths
@@ -72,4 +77,4 @@ def post_install_traverse_target(project, pod_name, config)
     config.build_settings['GCC_TREAT_WARNINGS_AS_ERRORS'] = "YES"
   end
 end
-    
+

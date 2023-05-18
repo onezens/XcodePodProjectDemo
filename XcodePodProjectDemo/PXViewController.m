@@ -8,7 +8,17 @@
 
 #import "PXViewController.h"
 #import <PXXOCLib/PXXUtils.h>
+#import "XcodePodProjectDemo_Example-Swift.h"
 
+/**
+ 
+ 1、swift 用宏
+ 2、用c
+ 3、自定义modulemap，访问OC
+ 
+ */
+
+@import PXXOCSwiftLib;
 @interface PXViewController ()
 
 @end
@@ -22,6 +32,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [PXXUtils showSwiftTime];
     NSLog(@"%@", [PXXUtils appInfo]);
+    [[FileUtils new] logDate];
+    NSLog(@"%@", [PXXOSUitls appInfo]);
 }
 
 - (void)didReceiveMemoryWarning

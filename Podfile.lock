@@ -1,4 +1,5 @@
 PODS:
+  - Address-Autofill-iOS (1.0.1)
   - Alamofire (5.6.4)
   - glog (0.3.4)
   - PXXFoundation (0.1.0):
@@ -7,6 +8,8 @@ PODS:
     - SDWebImage
   - PXXOCLib (0.1.0):
     - PXXSwiftLib
+  - PXXOCSwiftLib (0.2.0):
+    - PXXFoundation
   - PXXSwiftLib (0.1.0):
     - PXXFoundation
   - React-logger (1.0):
@@ -14,16 +17,23 @@ PODS:
   - SDWebImage (5.15.5):
     - SDWebImage/Core (= 5.15.5)
   - SDWebImage/Core (5.15.5)
+  - UnityFramework (0.0.10)
 
 DEPENDENCIES:
+  - Address-Autofill-iOS
   - glog
   - PXXFoundation (from `PXXFoundation`)
   - PXXOCLib (from `PXXOCLib`)
+  - PXXOCSwiftLib (from `PXXOCSwiftLib`)
   - PXXSwiftLib (from `PXXSwiftLib`)
   - React-logger (from `React-logger`)
   - SDWebImage
+  - UnityFramework (= 0.0.10)
 
 SPEC REPOS:
+  "git@github.com:onezens/PodSpec.git":
+    - Address-Autofill-iOS
+    - UnityFramework
   trunk:
     - Alamofire
     - glog
@@ -34,20 +44,25 @@ EXTERNAL SOURCES:
     :path: PXXFoundation
   PXXOCLib:
     :path: PXXOCLib
+  PXXOCSwiftLib:
+    :path: PXXOCSwiftLib
   PXXSwiftLib:
     :path: PXXSwiftLib
   React-logger:
     :path: React-logger
 
 SPEC CHECKSUMS:
+  Address-Autofill-iOS: f8dce56d46c7fa4cf57a50a4ab63045d7c793c9e
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
   PXXFoundation: 708016b99c76d22e8bfdb1610e9620ab161b4f98
   PXXOCLib: 53dee00d1a437c66d83283f1cc08cdbece8d510c
+  PXXOCSwiftLib: 012b5a74301476e1a0d44e8a48368bd4c2e2df16
   PXXSwiftLib: ac4c8fd358b2ae2455a85e6510ee13684f3603bc
   React-logger: ff8141263ba489edf64075fe68703349dfbc8601
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
+  UnityFramework: 604cef036a2cc4e1de6f0fe49b9fdfa339167f66
 
-PODFILE CHECKSUM: d713f101a3092860ebb04d9408a61debd96ce434
+PODFILE CHECKSUM: b95753ca337dcba6ee191455a9a73a872de4ba85
 
 COCOAPODS: 1.10.2
